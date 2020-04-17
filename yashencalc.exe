@@ -1,0 +1,50 @@
+using System;
+
+namespace YashenCCalculator
+{
+  class Program
+  {
+// 	  
+    static void Main(string[] args)
+    {
+// 		Declaring the two variables 1 and 2 for comparison
+		 Double num1 ; 
+		 Double num2 ;
+// 		Display the project title : Yashens Calculator
+		Console.WriteLine("__Yashen's_Calculator_C#__");
+		Console.WriteLine("-------------------------\n");
+// 		For the first input as X 
+		Console.WriteLine("Enter number x :");
+		 num1 = Convert.ToDouble(Console.ReadLine());
+// 		For the second input of the Y
+		Console.WriteLine("Enter number y :");
+		num2 = Convert.ToDouble(Console.ReadLine());
+		
+		//Ask the user to choose from the following options
+		Console.WriteLine("Choose from the following options for the 4 choices");
+		Console.WriteLine("\ta - Option 1 : Addition ");
+		Console.WriteLine("\ts - Option 2 : ");
+		Console.WriteLine("\tm - Option 3");
+		Console.WriteLine("\td - Option 4");
+		
+		switch (Console.ReadLine())
+            {
+                case "a":
+                    Console.WriteLine($"Your result: {num1} + {num2} = " + (num1 + num2));
+                    break;
+                case "s":
+                    Console.WriteLine($"Your result: {num1} - {num2} = " + (num1 - num2));
+                    break;
+                case "m":
+                    Console.WriteLine($"Your result: {num1} * {num2} = " + (num1 * num2));
+                    break;
+                case "d":
+                    Console.WriteLine($"Your result: {num1} / {num2} = " + (num1 / num2));
+                    break;
+            }
+		// Wait for the user to respond before closing.
+            Console.Write("Press any key to close Yashens Calculator console app...");
+            Console.ReadKey();
+    }
+  }
+}
