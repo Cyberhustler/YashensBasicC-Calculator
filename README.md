@@ -7,3 +7,7 @@ Testing C# console calculations.
    -Does the while included and checks for 
     -not only 0 but 
     -also negatives
+-yashencalc_v3.exe
+   -Does the while included and checks for 
+    -also makes the check if a Alpha character is entered and requests new one.
+    -adds a continuation and only stops after the boolean is true.
